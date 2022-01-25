@@ -1,0 +1,129 @@
+{
+  "showTitle": true,
+  "showBasemap": false,
+  "showLegend": true,
+  "expandAllLayersByDefault": false,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "SetVisibilityRange": true,
+    "EnableOrDisablePopup": true,
+    "ControlLabels": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "17e6d2a4ee3-layer-41": {
+      "display": true
+    },
+    "17e6d2a4ee1-layer-40": {
+      "display": true
+    },
+    "17e6d2a4edc-layer-39": {
+      "display": true
+    },
+    "17e455733ee-layer-40": {
+      "display": true
+    },
+    "17e454a554c-layer-38": {
+      "display": true
+    },
+    "17e454a554c-layer-37": {
+      "display": true
+    },
+    "17e454a554b-layer-36": {
+      "display": true
+    },
+    "17e454a5549-layer-35": {
+      "display": true
+    },
+    "17e454a554d-layer-39": {
+      "display": true
+    },
+    "17e44fe3c70-layer-33": {
+      "display": true
+    },
+    "17e44fe3c70-layer-31": {
+      "display": true
+    },
+    "17e44fe3c6f-layer-30": {
+      "display": true
+    },
+    "17e44fe3c6f-layer-29": {
+      "display": true
+    },
+    "17e44fe3c70-layer-32": {
+      "display": true
+    },
+    "17e44fe3c6d-layer-27": {
+      "display": true
+    },
+    "17e44fe3c6c-layer-26": {
+      "display": true
+    },
+    "17e44fe3c6c-layer-25": {
+      "display": true
+    },
+    "17e44fe3c6d-layer-28": {
+      "display": true
+    },
+    "17e4447ebbc-layer-22": {
+      "display": true
+    },
+    "17e4447ebba-layer-21": {
+      "display": true
+    },
+    "17e4447ebb7-layer-20": {
+      "display": true
+    },
+    "17e4447ebbf-layer-23": {
+      "display": true
+    },
+    "17e44257da3-layer-16": {
+      "display": true
+    },
+    "17e44257da4-layer-17": {
+      "display": true
+    },
+    "17e44257da2-layer-14": {
+      "display": true
+    },
+    "17e44257da3-layer-15": {
+      "display": true
+    },
+    "17e44257da1-layer-13": {
+      "display": true
+    },
+    "17e44257da4-layer-18": {
+      "display": true
+    },
+    "17e43f228fe-layer-10": {
+      "display": true
+    },
+    "17e43f228fd-layer-9": {
+      "display": true
+    },
+    "17e43f228fd-layer-8": {
+      "display": true
+    },
+    "17e43f228fc-layer-7": {
+      "display": true
+    },
+    "17e43f228fb-layer-5": {
+      "display": true
+    },
+    "17e43f228ff-layer-11": {
+      "display": true
+    },
+    "17e43f228fc-layer-6": {
+      "display": true
+    },
+    "17e6d2a4ee7-layer-43": {
+      "display": true
+    },
+    "17e6d2a4ee4-layer-42": {
+      "display": true
+    }
+  }
+}

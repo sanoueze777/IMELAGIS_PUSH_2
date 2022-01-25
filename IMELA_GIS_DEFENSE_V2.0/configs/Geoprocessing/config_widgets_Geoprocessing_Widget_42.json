@@ -1,0 +1,208 @@
+{
+  "name": "Viewshed",
+  "displayName": "Viewshed",
+  "description": "Returns polygons of visible areas for a given set of input observation points.",
+  "category": "",
+  "helpUrl": "https://elevation.arcgis.com/arcgis/rest/directories/arcgisoutput/Tools/Elevation_GPServer/Tools_Elevation/Viewshed.htm",
+  "_ssl": true,
+  "serverInfo": {
+    "currentVersion": 10.81,
+    "url": "https://elevation.arcgis.com/arcgis/rest/services/Tools/Elevation/GPServer/",
+    "hasResultMapServer": false,
+    "resultMapServerName": "",
+    "supportsUpload": false
+  },
+  "useResultMapServer": false,
+  "taskUrl": "https://elevation.arcgis.com/arcgis/rest/services/Tools/Elevation/GPServer/Viewshed",
+  "isSynchronous": false,
+  "inputParams": [
+    {
+      "name": "InputPoints",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "The point features to use as the observer locations.",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPoint",
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        },
+        "fields": [
+          {
+            "name": "OID",
+            "type": "esriFieldTypeOID",
+            "alias": "OID"
+          },
+          {
+            "name": "field1",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "field1"
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Input Point Features",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "draw",
+      "tooltip": "Input Point Features",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "name": "MaximumDistance",
+      "dataType": "GPDouble",
+      "description": "The maximum distance to calculate the viewshed.",
+      "defaultValue": null,
+      "category": "",
+      "label": "Maximum Distance",
+      "visible": true,
+      "required": false,
+      "tooltip": "Maximum Distance"
+    },
+    {
+      "name": "MaximumDistanceUnits",
+      "dataType": "GPString",
+      "description": "The units for the Maximum Distance parameter. The default is meters.Meters — The units are meters. This is the default.Kilometers — The units are kilometers.Feet — The units are feet.Yards — The units are yards.Miles — The units are miles.",
+      "defaultValue": "Meters",
+      "category": "",
+      "choiceList": [
+        "Meters",
+        "Kilometers",
+        "Feet",
+        "Yards",
+        "Miles"
+      ],
+      "label": "Maximum Distance Units",
+      "visible": true,
+      "required": false,
+      "tooltip": "Maximum Distance Units"
+    },
+    {
+      "name": "DEMResolution",
+      "dataType": "GPString",
+      "description": "The approximate spatial resolution (cell size) of the source elevation data used for the calculation. The default is 90m.The resolution keyword is an approximation of the spatial resolution of the digital elevation model. Many elevation sources are distributed with units of arc seconds, the keyword is an approximation in meters for easier understanding.FINEST — The finest units available for the extent are used.10m — The elevation source resolution is 1/3 arc second, or approximately 10 meters.24m — The elevation source is the Airbus WorldDEM4Ortho dataset at 24 meters resolution.30m — The elevation source resolution is 1 arc second, or approximately 30 meters.90m — The elevation source resolution is 3 arc second, or approximately 90 meters.",
+      "defaultValue": "FINEST",
+      "category": "",
+      "choiceList": [
+        "FINEST",
+        "10m",
+        "24m",
+        "30m",
+        "90m"
+      ],
+      "label": "DEM Resolution",
+      "visible": true,
+      "required": false,
+      "tooltip": "DEM Resolution"
+    },
+    {
+      "name": "ObserverHeight",
+      "dataType": "GPDouble",
+      "description": "The height above the surface of the observer. The default value of 1.75 meters is an average height of a person. If you are looking from an elevated location such as an observation tower or a tall building, use that height instead.",
+      "defaultValue": 1.75,
+      "category": "",
+      "label": "Observer Height",
+      "visible": true,
+      "required": false
+    },
+    {
+      "name": "ObserverHeightUnits",
+      "dataType": "GPString",
+      "description": "The units for the Observer Height parameter. The default is meters.Meters — The units are meters. This is the default.Kilometers — The units are kilometers.Feet — The units are feet.Yards — The units are yards.Miles — The units are miles.",
+      "defaultValue": "Meters",
+      "category": "",
+      "choiceList": [
+        "Meters",
+        "Kilometers",
+        "Feet",
+        "Yards",
+        "Miles"
+      ],
+      "label": "Observer Height Units",
+      "visible": true,
+      "required": false
+    },
+    {
+      "name": "SurfaceOffset",
+      "dataType": "GPDouble",
+      "description": "The height above the surface of the object you are trying to see. The default value is 0. If you are trying to see buildings or wind turbines use their height here.",
+      "defaultValue": 0,
+      "category": "",
+      "label": "Surface Offset",
+      "visible": true,
+      "required": false
+    },
+    {
+      "name": "SurfaceOffsetUnits",
+      "dataType": "GPString",
+      "description": "The units for the Surface Offset parameter. The default is meters.Meters — The units are meters. This is the default.Kilometers — The units are kilometers.Feet — The units are feet.Yards —The units are yards.Miles — The units are miles.",
+      "defaultValue": "Meters",
+      "category": "",
+      "choiceList": [
+        "Meters",
+        "Kilometers",
+        "Feet",
+        "Yards",
+        "Miles"
+      ],
+      "label": "Surface Offset Units",
+      "visible": true,
+      "required": false
+    },
+    {
+      "name": "GeneralizeViewshedPolygons",
+      "dataType": "GPBoolean",
+      "description": "Determine if the viewshed polygons are to be generalized or not.The viewshed calculation is based upon a raster elevation model which creates a result with stair-stepped edges. To create a more pleasing appearance and improve performance, the default behavior is to generalize the polygons. This generalization will not change the accuracy of the result for any location more than one half of the DEM's resolution.Checked — Generalizes the results. This is the default.Unchecked — No generalization of the output polygons will occur.",
+      "defaultValue": true,
+      "category": "",
+      "label": "Generalize Viewshed Polygons",
+      "visible": true,
+      "required": false
+    }
+  ],
+  "outputParams": [
+    {
+      "name": "OutputViewshed",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "",
+      "defaultValue": {},
+      "category": "",
+      "label": "Output Viewshed",
+      "visible": true,
+      "required": false,
+      "featureSetMode": "layers"
+    }
+  ],
+  "shareResults": false,
+  "layerOrder": [
+    "OutputViewshed",
+    "InputPoints"
+  ],
+  "showExportButton": false
+}
